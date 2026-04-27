@@ -13,7 +13,7 @@
 <body>
     <h1>PA1 - Ejercicios</h1>
     <ul>
-        <li><a href="ejercicio1">Ejercicio 1</a></li>
+        <li><a href="ejercicio1">Ejercicio 1 - Proyecto Trapecio</a></li>
         <li><a href="ejercicio2">Ejercicio 2</a></li>
         <li><a href="ejercicio3">Ejercicio 3 - Conversión de Monedas</a></li>
         <li><a href="ejercicio4">Ejercicio 4 - Figuras Geometricas</a></li>
