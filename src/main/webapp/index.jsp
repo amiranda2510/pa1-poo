@@ -17,7 +17,7 @@
         <li><a href="ejercicio2">Ejercicio 2</a></li>
         <li><a href="ejercicio3">Ejercicio 3 - Conversión de Monedas</a></li>
         <li><a href="ejercicio4">Ejercicio 4</a></li>
-        <li><a href="ejercicio5">Ejercicio 5</a></li>
+        <li><a href="ejercicio5">Ejercicio 5 - Proyecto Teatro</a></li>
     </ul>
 </body>
 </html>

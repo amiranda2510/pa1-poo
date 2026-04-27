@@ -9,7 +9,7 @@
     <body>
            <h1>Pregunta 3: Conversión de Monedas</h1>
         <hr>
-        <form action="MonedasController" method="POST">
+        <form action="ejercicio3" method="POST">
             <label>Monto a convertir:</label><br>
             <input type="text" name="txtMonto" ><br><br>
             
@@ -34,6 +34,5 @@
         <h3>Resultado:</h3>
         <p>El monto convertido es: <b>${resMonedas}</b></p>
         
-           </body>
     </body>
 </html>
