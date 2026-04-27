@@ -7,7 +7,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-           <h1>Ejercicio 3: Conversión de Monedas</h1>
+           <h1>Pregunta 3: Conversión de Monedas</h1>
         <hr>
         <form action="ejercicio3" method="POST">
             <label>Monto a convertir:</label><br>
@@ -34,6 +34,5 @@
         <h3>Resultado:</h3>
         <p>El monto convertido es: <b>${resMonedas}</b></p>
         
-           </body>
     </body>
 </html>
