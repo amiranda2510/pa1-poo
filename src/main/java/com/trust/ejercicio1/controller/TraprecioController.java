@@ -7,45 +7,28 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import com.trust.ejercicio1.model.TrapecioModel;
-import java.io.PrintWriter;
 
 @WebServlet(name = "TrapecioServlet", urlPatterns = {"/ejercicio1"})
 public class TraprecioController extends HttpServlet {
-    
-    
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
 
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet TraprecioController</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet TraprecioController at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.getRequestDispatcher("TrapecioView.jsp").forward(request, response);
     }
 
     @Override
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
         TrapecioModel miCalculadora = new TrapecioModel();
-        
         miCalculadora.calcular();
         
-        request.setAttribute("resultado", miCalculadora);
+        request.setAttribute("resAltura", String.format("%.2f", miCalculadora.altura));
+        request.setAttribute("resAreaTriangulo", String.format("%.2f", miCalculadora.areaTriangulo));
+        request.setAttribute("resPerimetro", String.format("%.2f", miCalculadora.perimetro));
         
+
         request.getRequestDispatcher("TrapecioView.jsp").forward(request, response);
     }
-    
-     @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
 }
