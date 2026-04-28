@@ -77,7 +77,7 @@
             
             <div class="mt-4 text-center">
                 <a href="index.jsp" class="btn btn-outline-secondary px-4 py-2 rounded-pill">
-                    <i class="bi bi-arrow-left me-1"></i>Menú Principal
+                    <i class="bi bi-house-door me-1"></i> Volver al Menú Principal
                 </a>
             </div>
             

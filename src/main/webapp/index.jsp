@@ -9,76 +9,97 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Menú de Ejercicios</title>
-
+    <title>PROCESO DE APREMDIZAJE 1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
     <style>
-        body { background-color: #f4f6f9; }
-
-        .card-custom {
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-
-        .card-header-custom {
-            background: linear-gradient(135deg, #0d6efd, #0a58ca);
-            color: white;
-            padding: 1.5rem;
-            text-align: center;
-        }
-
-        .list-group-item {
-            border: none;
-            border-bottom: 1px solid #eee;
-            transition: 0.2s;
-        }
-
-        .list-group-item:hover {
-            background-color: #f1f3f5;
-            transform: translateX(5px);
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
+        body { background-color: #f0f2f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .menu-card { transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 12px; }
+        .menu-card:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important; cursor: pointer; }
+        .ejercicio-link { text-decoration: none; color: inherit; display: block; }
+        .icon-box { font-size: 2.5rem; margin-bottom: 15px; }
     </style>
 </head>
-
-<body>
-
-<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-    <div class="card card-custom w-100" style="max-width: 600px;">
+<body class="py-5">
+    <div class="container">
         
-        <div class="card-header-custom">
-            <h2 class="mb-0"><i class="bi bi-list-task"></i> PA1 - Ejercicios</h2>
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-dark">PROCESO DE APRENDIZAJE 1</h1>
+            <p class="lead text-secondary">PROGRAMACIÓN ORIENTADA A OBJETOS</p>
+            <hr class="w-25 mx-auto border-primary" style="border-width: 3px;">
         </div>
 
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-                <a href="ejercicio1"><i class="bi bi-triangle"></i> Ejercicio 1 - Trapecio</a>
-            </li>
-            <li class="list-group-item">
-                <a href="ejercicio2"><i class="bi bi-123"></i> Ejercicio 2 - Números Romanos</a>
-            </li>
-            <li class="list-group-item">
-                <a href="ejercicio3"><i class="bi bi-currency-dollar"></i> Ejercicio 3 - Monedas</a>
-            </li>
-            <li class="list-group-item">
-                <a href="ejercicio4"><i class="bi bi-bounding-box"></i> Ejercicio 4 - Figuras Geométricas</a>
-            </li>
-            <li class="list-group-item">
-                <a href="ejercicio5"><i class="bi bi-ticket-perforated"></i> Ejercicio 5 - Calculadora Entradas de Teatro</a>
-            </li>
-        </ul>
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-md-6 col-lg-4">
+                <a href="ejercicio1" class="ejercicio-link">
+                    <div class="card h-100 shadow-sm menu-card border-top border-primary border-4">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box text-primary"><i class="bi bi-triangle"></i></div>
+                            <h4 class="card-title fw-bold">Ejercicio 1</h4>
+                            <p class="card-text text-muted">Proyecto “Trapecio”.</p>
+                            <span class="btn btn-outline-primary w-100 mt-2">Ver Proyecto</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
+            <div class="col-md-6 col-lg-4">
+                <a href="ejercicio2" class="ejercicio-link">
+                    <div class="card h-100 shadow-sm menu-card border-top border-success border-4">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box text-success fw-bold" style="font-family: 'Times New Roman', serif;">
+                                XII
+                            </div>
+                            <h4 class="card-title fw-bold">Ejercicio 2</h4>
+                            <p class="card-text text-muted">Proyecto “Números romanos”.</p>
+                            <span class="btn btn-outline-success w-100 mt-2">Ver Proyecto</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="ejercicio3" class="ejercicio-link">
+                    <div class="card h-100 shadow-sm menu-card border-top border-warning border-4">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box text-warning"><i class="bi bi-currency-exchange"></i></div>
+                            <h4 class="card-title fw-bold">Ejercicio 3</h4>
+                            <p class="card-text text-muted">Proyecto “conversión de monedas”.</p>
+                            <span class="btn btn-outline-warning w-100 mt-2">Ver Proyecto</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="ejercicio4" class="ejercicio-link">
+                    <div class="card h-100 shadow-sm menu-card border-top border-info border-4">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box text-info"><i class="bi bi-bounding-box"></i></div>
+                            <h4 class="card-title fw-bold">Ejercicio 4</h4>
+                            <p class="card-text text-muted">Proyecto “Figura geométrica”.</p>
+                            <span class="btn btn-outline-info w-100 mt-2">Ver Proyecto</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="ejercicio5" class="ejercicio-link">
+                    <div class="card h-100 shadow-sm menu-card border-top border-danger border-4">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box text-danger"><i class="bi bi-ticket-perforated"></i></div>
+                            <h4 class="card-title fw-bold">Ejercicio 5</h4>
+                            <p class="card-text text-muted">Proyecto “Teatro”.</p>
+                            <span class="btn btn-outline-danger w-100 mt-2">Ver Proyecto</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
     </div>
-</div>
-
 </body>
 </html>

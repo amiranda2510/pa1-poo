@@ -25,7 +25,7 @@ public class FigurasGeometricasModel {
                     break;
                 case "3": resultado = valor1*valor2/2;
                     break;
-                case "4": resultado = valor1*valor4/2;
+                case "4": resultado = valor1*valor2/2;
                     break;
                 default: resultado = (valor1+valor3)*valor2/2;
                     break;      
@@ -42,7 +42,7 @@ public class FigurasGeometricasModel {
                     break;
                 case "3": resultado = valor1+valor2+valor3;
                     break;
-                case "4": resultado = valor1+valor2+valor3+valor4;
+                case "4": resultado = (valor3*2)+(valor4*2);
                     break;
                 default: resultado = valor1+valor2+valor3+valor4;
                     break;      
